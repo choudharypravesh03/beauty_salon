@@ -1,0 +1,33 @@
+{
+  "name": "parlour",
+  "version": "0.0.0",
+  "description": "Website for Parlour",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/choudharypravesh03/beauty_salon"
+  },
+  "keywords": [
+    "beauty",
+    "salon",
+    "parlour"
+  ],
+  "author": "Pravesh Choudhary <choudharypravesh03@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/choudharypravesh03/beauty_salon/issues"
+  }
+}
