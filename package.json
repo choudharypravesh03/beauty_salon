@@ -29,5 +29,11 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/choudharypravesh03/beauty_salon/issues"
-  }
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ]
 }
