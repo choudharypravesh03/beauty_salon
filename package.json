@@ -2,12 +2,14 @@
   "name": "parlour",
   "version": "0.0.0",
   "description": "Website for Parlour",
-  "main": "index.js",
+  "main": "website.js",
   "directories": {
     "example": "examples",
     "test": "test"
   },
   "dependencies": {
+    "express": "*",
+    "ejs": "*",
     "chai": "^3.5.0"
   },
   "devDependencies": {
