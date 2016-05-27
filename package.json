@@ -10,7 +10,8 @@
   "dependencies": {
     "express": "*",
     "ejs": "*",
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "bower": "*"
   },
   "devDependencies": {
     "mocha": "^2.4.5"

@@ -4,43 +4,28 @@
 ======*/
 
 @font-face {
-    font-family: MontserratBlack;
-    src: url('../fonts/Montserrat-Black.otf');
+    font-family: HelveticaBold;
+    src: url('../fonts/Helvetica%20Neu%20Bold.ttf');
 }
 
 @font-face {
-    font-family: MontserratBold;
-    src: url('../fonts/Montserrat-Bold.otf');
+    font-family: HelveticaLight;
+    src: url('../fonts/HelveticaNeue%20Light.ttf');
 }
 
 @font-face {
-    font-family: MontserratExtraBold;
-    src: url('../fonts/Montserrat-ExtraBold.otf');
+    font-family: HelveticaMedium;
+    src: url('../fonts/HelveticaNeue%20Medium.ttf');
 }
 
 @font-face {
-    font-family: MontserratHairline;
-    src: url('../fonts/Montserrat-Hairline.otf');
+    font-family: HelveticaThin;
+    src: url('../fonts/HelveticaNeue%20Thin.ttf');
 }
 
 @font-face {
-    font-family: MontserratLight;
-    src: url('../fonts/Montserrat-Light.otf');
-}
-
-@font-face {
-    font-family: MontserratRegular;
-    src: url('../fonts/Montserrat-Regular.otf');
-}
-
-@font-face {
-    font-family: MontserratSemiBold;
-    src: url('../fonts/Montserrat-SemiBold.otf');
-}
-
-@font-face {
-    font-family: MontserratUltraLight;
-    src: url('../fonts/Montserrat-UltraLight.otf');
+    font-family: HelveticaNeue;
+    src: url('../fonts/HelveticaNeue.ttf');
 }
 
 
@@ -51,20 +36,20 @@ img {
     border: none;
 }
 
-html {
+/*html {
     height: 100%;
     overflow: hidden;
-}
+}*/
 
 body {
-    font-family: MontserratRegular, Verdana, sans-serif;
+    font-family: HelveticaNeue, Verdana, sans-serif;
     font-size: 100%;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    margin: 0px;
     height: 100%;
-    overflow-y: scroll;
+    width: 100%;
     overflow-x: hidden;
 }
+
 
 a:link, a:active, a:visited {
     text-decoration: none;

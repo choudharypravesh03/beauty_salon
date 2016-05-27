@@ -4,20 +4,171 @@
     <% include partials/head.ejs%>
 </head>
 <body>
-    <section>
-        <div class="transparent">
-            <div id="slide0" class="slide header">
-                <h1>Pure CSS Parallax</h1>
+
+    <nav id="navigation">
+       <div class="flex-space-between body-wrapper">
+           <div class="logo-wrapper">
+               <div class="logo">Touch & Shine</div>
+               <div class="logo-sub">Beauty Parlour and Training Center</div>
+           </div>
+           <div class="nav-wrapper">
+               <ul>
+                   <li>Home</li>
+                   <li>Services</li>
+                   <li>Bridal</li>
+                   <li>Courses</li>
+                   <li>About Us</li>
+                   <li>Contact Us</li>
+               </ul>
+           </div>
+       </div>
+    </nav>
+
+
+    <!-- HTML -->
+    <section id="slide-1" class="homeSlide">
+        <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+            <div class="hsContainer">
+                <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+                    <h2>Fade out elements before<br />they leave viewport</h2>
+                    <p>This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section>
+
+   <section id="slide-2">
+       <div class="bcg"
+            data-0="background-color:rgb(1,27,59);"
+            data-top="background-color:(0,0,0);"
+            data-anchor-target="#slide-2"
+       >
+           <div class="hsContainer">
+               <div class="hsContent">
+                   <h2
+                           data--200-bottom="opacity: 0"
+                           data-center="opacity: 1"
+                           data-206-top="opacity: 1"
+                           data-106-top="opacity: 0"
+                           data-anchor-target="#slide-2 h2"
+                   >
+                       Fade me in and out
+                   </h2>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- HTML -->
+   <section id="slide-3" class="homeSlide">
+       <div class="bcg"
+            data-center="background-position: 50% 0px;"
+            data-top-bottom="background-position: 50% -100px;"
+            data-anchor-target="#slide-3"
+       >
+           <div class="hsContainer">
+               <div class="hsContent">
+                   <div class="plaxEl"
+                        data-106-top="opacity: 0"
+                        data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
+                        data--30p-top="opacity: 1;"
+                        data--60p-top="opacity: 0;"
+                        data-anchor-target="#slide-3"
+                   >
+                       <h2>Fixed element fading in and out</h2>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- HTML -->
+   <section id="slide-4" class="homeSlide homeSlideTall">
+       <div class="bcg"
+            data-center="background-position: 50% 0px;"
+            data-bottom-top="background-position: 50% 100px;"
+            data-top-bottom="background-position: 50% -100px;"
+            data-anchor-target="#slide-4"
+       >
+           <div class="curtainContainer">
+               <div class="curtain"
+                    data-bottom-top="opacity: 0"
+                    data-106-top="height: 1%; top: -10%; opacity: 0;"
+                    data-center="height: 100%; top: 0%; opacity: 0.5"
+                    data-anchor-target="#slide-4"
+               ></div>
+               <div class="copy"
+                    data-bottom-top="opacity: 0"
+                    data--100-bottom="opacity: 0"
+                    data--280-bottom="opacity: 1;"
+                    data-280-top="opacity: 1;"
+                    data-106-top="opacity: 0;"
+                    data-anchor-target="#slide-4 .copy"
+               >
+                   <h2>Curtain effect while you scroll</h2>
+               </div>
+
+           </div>
+       </div>
+   </section>
+
+   <!-- HTML -->
+   <section id="slide-5" class="homeSlide homeSlideTall2">
+       <div class="bcg">&nbsp;</div>
+       <div class="bcg bcg2"
+            data-bottom-top="opacity: 0;"
+            data--33p-top="opacity: 0;"
+            data--66p-top="opacity: 1;"
+            data-anchor-target="#slide-5"
+       >
+           <div class="hsContainer">
+               <div class="hsContent"
+                    data-bottom-top="opacity: 0;"
+                    data-center="opacity: 1"
+                    data-anchor-target="#slide-5"
+               >
+                   <h2>Fixed element fading in and out</h2>
+               </div>
+           </div>
+       </div>
+       <div class="bcg bcg3"
+            data-300-bottom="opacity: 0;"
+            data-100-bottom="opacity: 1;"
+            data-anchor-target="#slide-5"
+       >
+           <div class="hsContainer">
+               <div class="hsContent"
+                    data-100-bottom="opacity: 0;"
+                    data-bottom="opacity: 1;"
+                    data-anchor-target="#slide-5"
+               >
+                   <h2>The End</h2>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- <section id="intro">
+        <div class="heading-wrapper transparent">
+            <div id="slide0" class="slide header">
+                &lt;!&ndash;   <div class="heading">
+                       <span>Touch</span>
+                       <span>& Shine</span>
+                   </div>
+                   <div class="subheading">Beauty Salon & Training Center</div>&ndash;&gt;
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
         <div id="slide1" class="slide">
-            <!--<div class="title">
+            &lt;!&ndash;<div class="title">
                 <h1>Slide 1</h1>
                 <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-            </div>-->
+            </div>&ndash;&gt;
             <div id="products-wrapper" class="body-wrapper text-center">
                 <div class="heading">Our Products</div>
                 <div class="products"></div>
@@ -26,14 +177,14 @@
     </section>
 
     <section>
-            <div id="slide2" class="slide">
-                <div class="title">
-                    <h1>Slide 2</h1>
-                    <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-                </div>
-                <img src="http://lorempixel.com/640/480/abstract/6/">
-                <img src="http://lorempixel.com/640/480/abstract/4/">
+        <div id="slide2" class="slide">
+            <div class="title">
+                <h1>Slide 2</h1>
+                <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
             </div>
+            <img src="http://lorempixel.com/640/480/abstract/6/">
+            <img src="http://lorempixel.com/640/480/abstract/4/">
+        </div>
     </section>
 
     <section>
@@ -49,8 +200,11 @@
         <div id="slide4" class="slide header">
             <h1>The End</h1>
         </div>
-    </section>
+    </section>-->
 
-
+    <script src="/vendors/js/jquery.js"></script>
+    <script src="/vendors/js/imagesloaded.js"></script>
+    <script src="/vendors/js/skrollr.min.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 </html>
