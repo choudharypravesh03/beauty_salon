@@ -4,7 +4,7 @@ and (min-device-width: 1200px)
 and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 1) {
 
-    /* CSS */
+    /* PARALLAX CSS ================================= */
 
     .hsContainer {
         display: table;
@@ -19,7 +19,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         margin: -150px auto 0 auto;
         display: table-cell;
         vertical-align: middle;
-        color: #ebebeb;
+        color: #666666;
         padding: 0 8%;
         text-align: center
     }
@@ -38,12 +38,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     #slide-2 .bcg {
         background: none;
         background-color: #010101;
-        height: 310px;
+        height: 100vh;
         text-align: center
     }
 
     /* CSS - Slide 3 */
-    #slide-3 .bcg {background-image:url('../images/bcg_slide-2.jpg')}
+    #slide-3 .bcg {background-image:url('../images/bridal/back-image-1.png')}
 
     /* Slide 4 */
     .curtainContainer {
@@ -61,7 +61,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         bottom: 30%; left: 0;
         width: 100%; text-align: center;
     }
-    #slide-4 .bcg {background-image:url('../images/bcg_slide-4.jpg')}
+    #slide-4 .bcg {background-image:url('../images/courses/courses-backimage.jpg')}
 
     /* Slide 5 */
     #slide-5 {position: relative;}
@@ -77,6 +77,8 @@ and (-webkit-min-device-pixel-ratio: 1) {
         opacity: 0; z-index: 2
     }
 
+    /* END ================================= */
+
 
 
 
@@ -87,39 +89,195 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     .heading {
         font-family: HelveticaBold;
-        position: absolute;
-        top: 37vh;
-        left: 10vw;
         font-size: 3em;
+        color: #ffffff;
     }
 
     .subheading {
         font-family: HelveticaThin;
         font-size: 40px;
-        position: absolute;
-        top: 53vh;
-        left: 10vw;
+        color: #ffffff;
     }
 
 
 
-    /*LOGO*/
+    /* NAVIGATION WRAPPER */
 
     #navigation {
         position: fixed;
-        z-index: 10;
+        width: 100%;
+        color: #ffffff;
+        padding: 10px;
+        z-index: 1;
     }
 
     .flex-space-between {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .navigation-wrapper {
+        width: 100%;
     }
 
     .nav-wrapper ul li {
         display: inline;
+        padding-right: 2em;
+    }
+
+    .logo {
+        font-family: HelveticaBold;
+        font-size: 23px;
+    }
+
+    .logo-sub {
+        font-family: HelveticaThin;
+    }
+
+    .nav-wrapper {
+        font-family: HelveticaLight;
     }
 
 
+    /*SERVICES*/
+
+
+    #slide-2 .item {
+        width: 23vw;
+        height: 68vh;
+        /*border: 1px solid #9b9b9b;*/
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        background-color: #666666;
+    }
+
+    #slide-2 .item:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    #slide-2 .block-heading {
+        font-family: HelveticaLight;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    #slide-2 .block-text {
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #ffffff;
+    }
+
+    #slide-2 .block-desc {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    #slide-2 .fa-circle-o {
+        font-size: 12px;
+    }
+
+    #slide-2 .text {
+        font-family: HelveticaLight;
+        margin-left: 7px;
+    }
+
+    #slide-2 table tr {
+        height: 40px;
+    }
+
+    #slide-2 .point {
+        display: flex;
+    }
+
+    #slide-2 .flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #slide-2 .owl-stage-outer {
+        margin-left: 13px;
+    }
+
+    #slide-2 .arrow-icons {
+        font-size: 50px;
+        font-weight: inherit;
+        cursor: pointer;
+    }
+
+    #slide-2 .arrow-icons:hover {
+        -ms-transform: scale(2,3); /* IE 9 */
+        -webkit-transform: scale(2,3); /* Safari */
+        transform: scale(1.1,1.1);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    }
+
+    #slide-2 .slide2-pad {
+        padding: 0 5%;
+    }
+
+    #slide-2 .carousel-holder {
+        width: 82vw;
+    }
+
+
+    /*BRIDAL*/
+
+    #slide-3 .title {
+        color: #ffffff;
+    }
+
+    #slide-3 .flex-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #slide-3 .text {
+        font-family: HelveticaLight;
+        color: #ffffff !important;
+        text-align: justify;
+        font-size: 17px;
+    }
+
+    #slide-3 .bridal-text, #slide-3 .bridal-image {
+        width: 50%;
+    }
+
+    #slide-3 .bridal-text {
+        padding-right: 3em;
+    }
+
+    #slide-3 .image-bride {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    #slide-4 .text {
+        font-family: HelveticaLight;
+        color: #ffffff !important;
+        text-align: left;
+        font-size: 17px;
+    }
+
+    #slide-4 .courses-wrapper {
+        width: 50%;
+        padding-left: 8%;
+    }
+
+    #slide-4 .heading {
+        font-family: HelveticaThin;
+        font-size: 56px;
+        color: #ffffff;
+    }
+
+    #slide-4 .subheading {
+        font-family: HelveticaLight;
+        color: #ffffff !important;
+        text-align: left;
+        font-size: 20px;
+        line-height: 30px;
+    }
 
 }
 

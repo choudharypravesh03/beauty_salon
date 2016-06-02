@@ -48,6 +48,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -99,4 +100,14 @@ p {
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.title {
+    font-family: HelveticaBold;
+    font-size: 30px;
+    color: #666666;
 }

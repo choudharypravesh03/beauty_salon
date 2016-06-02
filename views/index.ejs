@@ -6,7 +6,7 @@
 <body>
 
     <nav id="navigation">
-       <div class="flex-space-between body-wrapper">
+       <div class="flex-space-between navigation-wrapper">
            <div class="logo-wrapper">
                <div class="logo">Touch & Shine</div>
                <div class="logo-sub">Beauty Parlour and Training Center</div>
@@ -27,34 +27,440 @@
 
     <!-- HTML -->
     <section id="slide-1" class="homeSlide">
-        <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
-            <div class="hsContainer">
-                <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
-                    <h2>Fade out elements before<br />they leave viewport</h2>
-                    <p>This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
+            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+                <div class="hsContainer transparent">
+                    <div class="hsContent text-left" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 > div">
+                        <div class="heading">Touch & Shine</div>
+                        <div class="subheading">Beauty Parlour and Training Center</div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
 
    <section id="slide-2">
        <div class="bcg"
-            data-0="background-color:rgb(1,27,59);"
-            data-top="background-color:(0,0,0);"
+            data-0="background-color:rgb(0, 0, 0);"
+            data-top="background-color:rgb(237, 237, 237);"
             data-anchor-target="#slide-2"
        >
            <div class="hsContainer">
-               <div class="hsContent">
-                   <h2
-                           data--200-bottom="opacity: 0"
-                           data-center="opacity: 1"
-                           data-206-top="opacity: 1"
-                           data-106-top="opacity: 0"
-                           data-anchor-target="#slide-2 h2"
-                   >
-                       Fade me in and out
-                   </h2>
+               <div class="hsContent slide2-pad">
+                   <!--data&#45;&#45;200-bottom="opacity: 0"
+                   data-center="opacity: 1"
+                   data-206-top="opacity: 1"
+                   data-106-top="opacity: 0"
+                   data-anchor-target="#slide-2 .title"-->
+                   <div>
+                       <div class="title">SERVICES</div>
+                       <br>
+                       <br>
+                       <div class="flex-container">
+                           <div class="left-arrow">
+                               <i class="arrow-icons fa fa-chevron-left" aria-hidden="true"></i>
+                           </div>
+                           <div class="carousel-holder">
+                               <div id="item-1" class="item">
+                                   <div class="block-image">
+                                       <img src='/images/services/beauty.jpg' width="100%">
+                                   </div>
+                                   <div class="block-text">
+                                       <div class="block-heading">HAIR</div>
+                                       <div class="block-desc">
+                                           <table align="center" width="100%">
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Change of Style</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Children Hair cuts</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Trimming</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Hair Spa</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Tongs</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Head Massage</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Blow Dry</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div id="item-2" class="item">
+                                   <div class="block-image">
+                                       <img src='/images/services/beauty.jpg' width="100%">
+                                   </div>
+                                   <div class="block-text">
+                                       <div class="block-heading">Hair</div>
+                                       <div class="block-desc">
+                                           <table align="center" width="100%">
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Change of Style</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Children Hair cuts</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Trimming</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Hair Spa</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Tongs</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Head Massage</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Blow Dry</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div id="item-3" class="item">
+                                   <div class="block-image">
+                                       <img src='/images/services/beauty.jpg' width="100%">
+                                   </div>
+                                   <div class="block-text">
+                                       <div class="block-heading">HAIR</div>
+                                       <div class="block-desc">
+                                           <table align="center" width="100%">
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Change of Style</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Children Hair cuts</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Trimming</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Hair Spa</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Tongs</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Head Massage</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Blow Dry</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div id="item-4" class="item">
+                                   <div class="block-image">
+                                       <img src='/images/services/beauty.jpg' width="100%">
+                                   </div>
+                                   <div class="block-text">
+                                       <div class="block-heading">HAIR</div>
+                                       <div class="block-desc">
+                                           <table align="center" width="100%">
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Change of Style</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Children Hair cuts</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Trimming</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Hair Spa</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Tongs</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Head Massage</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Blow Dry</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div id="item-5" class="item">
+                                   <div class="block-image">
+                                       <img src='/images/services/beauty.jpg' width="100%">
+                                   </div>
+                                   <div class="block-text">
+                                       <div class="block-heading">HAIR</div>
+                                       <div class="block-desc">
+                                           <table align="center" width="100%">
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Change of Style</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Children Hair cuts</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Trimming</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Hair Spa</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Tongs</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Head Massage</div>
+                                                       </div>
+                                                   </td>
+                                               </tr>
+                                               <tr>
+                                                   <td>
+                                                       <div class="point">
+                                                           <div>
+                                                               <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                           </div>
+                                                           <div class="text">Blow Dry</div>
+                                                       </div>
+                                                   </td>
+                                                   <td>
+
+                                                   </td>
+                                               </tr>
+                                           </table>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="right-arrow">
+                               <i class="arrow-icons fa fa-chevron-right" aria-hidden="true"></i>
+                           </div>
+                       </div>
+                   </div>
                </div>
            </div>
        </div>
@@ -69,14 +475,49 @@
        >
            <div class="hsContainer">
                <div class="hsContent">
-                   <div class="plaxEl"
-                        data-106-top="opacity: 0"
-                        data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
-                        data--30p-top="opacity: 1;"
-                        data--60p-top="opacity: 0;"
-                        data-anchor-target="#slide-3"
-                   >
-                       <h2>Fixed element fading in and out</h2>
+                   <div class="plaxEl">
+
+                      <!-- data-106-top="opacity: 0"
+                       data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
+                       data&#45;&#45;30p-top="opacity: 1;"
+                       data&#45;&#45;60p-top="opacity: 0;"
+                       data-anchor-target="#slide-3"-->
+
+                       <div>
+                           <div class="title">BRIDAL MAKEUP</div>
+                           <br>
+                           <div class="flex-container">
+                               <div class="bridal-text text-left">
+                                   <div class="subheading">Look like a princess on your special day</div>
+                                   <div class="">
+                                       <p class="text">We specialise in creating a natural, radiant look - how most
+                                           brides want to look and feel on their big day!
+                                       </p>
+
+                                       <p class="text">On your wedding day we will help create a relaxing, calm, fun atmosphere.</p>
+
+                                       <p class="text">Every bride dreams of her wedding day and wants to be at her
+                                           best appearance that day. Bridal make up is an important
+                                           part of bridal dressing. Along with the shinning jewellery
+                                           and a gorgeous wedding dress. So it’s very important to
+                                           know about the right kind of bridal make up that would
+                                           suit the brides taste and skin tone.
+                                       </p>
+
+                                       <p class="text">Every bridal makeover will be conducted at your home, or
+                                           wherever you will be getting ready the day of your wedding.
+                                           We will ensure that you will look your most outstanding in
+                                           any type of lighting, from indoors to outdoors. Each
+                                           makeover includes cleansing, moisturizing, foundation
+                                           to powder; blush, eyes, and lips.
+                                       </p>
+                                   </div>
+                               </div>
+                               <div class="bridal-image">
+                                   <img class="image-bride" src="/images/bridal/bridal-image.jpg" alt="bridal makeup" width="100%">
+                               </div>
+                           </div>
+                       </div>
                    </div>
                </div>
            </div>
@@ -101,13 +542,18 @@
                ></div>
                <div class="copy"
                     data-bottom-top="opacity: 0"
-                    data--100-bottom="opacity: 0"
-                    data--280-bottom="opacity: 1;"
-                    data-280-top="opacity: 1;"
-                    data-106-top="opacity: 0;"
-                    data-anchor-target="#slide-4 .copy"
-               >
-                   <h2>Curtain effect while you scroll</h2>
+                    data--100-bottom="opacity: 1;"
+                    data-anchor-target="#slide-4 .copy">
+
+                   <div class="courses-wrapper text-left">
+                       <div class="heading">The premiere choice for beautician courses in Bhopal</div>
+                       <br>
+                       <div class="subheading">Become a Pro Makeup Artist. Join and receive your certificate.
+                           Looking for a professional make up course? A woman who cuts her hair is about
+                           to change her life
+                       </div>
+                   </div>
+
                </div>
 
            </div>
@@ -115,12 +561,12 @@
    </section>
 
    <!-- HTML -->
-   <section id="slide-5" class="homeSlide homeSlideTall2">
+  <!-- <section id="slide-5" class="homeSlide homeSlideTall2">
        <div class="bcg">&nbsp;</div>
        <div class="bcg bcg2"
             data-bottom-top="opacity: 0;"
-            data--33p-top="opacity: 0;"
-            data--66p-top="opacity: 1;"
+            data&#45;&#45;33p-top="opacity: 0;"
+            data&#45;&#45;66p-top="opacity: 1;"
             data-anchor-target="#slide-5"
        >
            <div class="hsContainer">
@@ -148,7 +594,7 @@
                </div>
            </div>
        </div>
-   </section>
+   </section>-->
 
 
    <!-- <section id="intro">
@@ -205,6 +651,7 @@
     <script src="/vendors/js/jquery.js"></script>
     <script src="/vendors/js/imagesloaded.js"></script>
     <script src="/vendors/js/skrollr.min.js"></script>
+    <script src="/vendors/owl-carousel/owl.carousel.js"></script>
     <script src="/script/script.js"></script>
 </body>
 </html>

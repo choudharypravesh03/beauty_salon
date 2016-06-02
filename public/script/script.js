@@ -20,6 +20,8 @@
         }, 800);
     });
 
+    globalInit();
+
     function adjustWindow(){
 
         // Init Skrollr
@@ -48,5 +50,46 @@
         s.refresh($('.homeSlide'));
 
     }
+
+    function globalInit() {
+        //CAROUSEL FOR SERVICES
+        var owlCarousel = $(".carousel-holder").owlCarousel({
+            center: true,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout:2000,
+            mouseDrag: true,
+            touchDrag: true,
+            slideBy: 1,
+            startPosition: 1,
+            dots: false,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut",
+            smartSpeed: 750,
+            fluidSpeed: 750,
+            addClassActive: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+
+        $('.left-arrow').on('click', function () {
+            $(".carousel-holder").trigger('prev.owl.carousel');
+        });
+
+        $('.right-arrow').on('click', function () {
+            $(".carousel-holder").trigger('next.owl.carousel');
+        });
+    }
+
 
 } )( jQuery );
