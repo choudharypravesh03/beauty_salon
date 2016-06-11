@@ -57,15 +57,15 @@
             center: true,
             loop: true,
             margin: 30,
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout:2000,
             mouseDrag: true,
             touchDrag: true,
             slideBy: 1,
             startPosition: 1,
-            dots: false,
+            dots: false,/*
             animateIn: "fadeIn",
-            animateOut: "fadeOut",
+            animateOut: "fadeOut",*/
             smartSpeed: 750,
             fluidSpeed: 750,
             addClassActive: true,
@@ -74,10 +74,10 @@
                     items: 1
                 },
                 600: {
-                    items: 2
+                    items: 1
                 },
                 1000: {
-                    items: 3
+                    items: 1
                 }
             }
         });
@@ -88,6 +88,38 @@
 
         $('.right-arrow').on('click', function () {
             $(".carousel-holder").trigger('next.owl.carousel');
+        });
+
+
+
+
+        /*TESTIMONIALS CAROUSEL*/
+
+        var owlCarousel = $("#testimonial-carousel").owlCarousel({
+            center: true,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout:2000,
+            mouseDrag: true,
+            touchDrag: true,
+            slideBy: 1,
+            startPosition: 1,
+            dots: true,
+            smartSpeed: 750,
+            fluidSpeed: 750,
+            addClassActive: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
         });
     }
 
