@@ -132,6 +132,21 @@
             });
         });
 
+        window.initMap = function() {
+            var myLatLng = {lat: 23.193300, lng: 77.467363};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Touch & Shine Beauty Parlour'
+            });
+        }
+
     }
 
 

@@ -141,4 +141,17 @@ p {
     background: #ff1a56 !important;
 }
 
+.title-wrapper .heading {
+    color: #333;
+    text-align: center;
+}
+
+.slide {
+    height: 100vh;
+}
+
+.slide-120 {
+    height: 120vh;
+}
+
 

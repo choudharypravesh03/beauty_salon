@@ -285,7 +285,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     #slide-2 .text {
-        font-family: HelveticaLight;
+        font-family: HelveticaMedium;
         margin-left: 7px;
     }
 
@@ -332,11 +332,40 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     #slide-2 .block-image {
-        background: url("../images/services/hair.jpg");
         width: 50%;
         height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    #slide-2 .block-image-1 {
+        background: url("../images/services/hair.jpg");
+    }
+
+    #slide-2 .block-image-2 {
+        background: url("../images/services/haircolor.jpg");
+        background-position: -100px 50px;
+    }
+
+    #slide-2 .block-image-3 {
+        background: url("../images/services/threading.jpg");
+    }
+
+    #slide-2 .block-image-4 {
+        background: url("../images/services/facial.jpg");
+    }
+
+    #slide-2 .block-image-5 {
+        background: url("../images/services/bleach.jpg");
+        background-position: -152px -60px;
+    }
+
+    #slide-2 .block-image-6 {
+        background: url("../images/services/treatment.jpg");
+    }
+
+    #slide-2 .block-image-7 {
+        background: url("../images/services/waxing.jpg");
     }
 
     #slide-2 .bring-center {
@@ -492,38 +521,39 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     #gallery-wrapper {
         margin-top: 10vh;
+        height: 220vh;
     }
 
     #gallery-wrapper .heading {
         color: #333;
     }
 
-    .grid {
+    #gallery-wrapper .grid {
         background: #FFFFFF;
         width: 70vw;
         margin: 0 auto;
     }
 
     /* clear fix */
-    .grid:after {
+    #gallery-wrapper .grid:after {
         content: '';
         display: block;
         clear: both;
     }
 
     /* ---- .grid-item ---- */
-    .grid-sizer,
-    .grid-item {
+    #gallery-wrapper .grid-sizer,
+    #gallery-wrapper .grid-item {
         width: 30%;
     }
 
-    .grid-item {
+    #gallery-wrapper .grid-item {
         float: left;
         margin-bottom: 10px;
         overflow: hidden;
     }
 
-    .grid-item img {
+    #gallery-wrapper .grid-item img {
         display: block;
         width: 100%;
         -webkit-transition: all 0.5s linear;
@@ -532,10 +562,101 @@ and (-webkit-min-device-pixel-ratio: 1) {
         transform: scale3d(1, 1, 1);
     }
 
-    .grid-item img:hover {
+    #gallery-wrapper .grid-item img:hover {
         -webkit-transform: scale3d(1.2, 1.2, 1);
         transform: scale3d(1.2, 1.2, 1);
     }
+
+    /*LOCATION ON MAP*/
+
+    #map {
+        width: 100%;
+        height: 400px;
+    }
+
+
+    /*PACKAGES*/
+
+    #packages .packages-blocks {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #packages .packages-wrapper {
+        height: 100%;
+    }
+
+    #packages .package-item {
+        width: 28vw;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.22);
+    }
+
+    #packages .package-item .pkg-img {
+        height: 37vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #packages .pkg-img-1 {
+        background: url("../images/packages/packages-image-1.jpg");
+    }
+
+    #packages .pkg-img-2 {
+        background: url("../images/packages/packages-image-2.jpg");
+    }
+
+    #packages .pkg-img-3 {
+        background: url("../images/packages/packages-image-3.jpg");
+    }
+
+    #packages .pkg-desc ul {
+       padding: 0;
+    }
+
+    #packages .pkg-desc ul li {
+        list-style-type: none;
+        font-family: HelveticaMedium;
+        font-size: 18px;
+        padding: 10px;
+        color: #666666;
+        border-bottom:1px solid #ddd;
+    }
+
+    #packages .pkg-text {
+        padding: 20px;
+    }
+
+    #packages .pkg-title {
+        font-family: Helvetica;
+        font-size: 18px;
+    }
+
+    #packages .pkg-cost {
+        font-family: HelveticaBold;
+        font-size: 40px;
+    }
+
+    #packages .packages-headings {
+        padding: 15px;
+        border-radius: 4px;
+        color: #ffffff;
+    }
+
+    #packages .package-1 .packages-headings {
+        background: #f5a623;
+    }
+
+    #packages .package-2 .packages-headings {
+        background: #f64d4d;
+    }
+
+    #packages .package-3 .packages-headings {
+        background: #30dbb5;
+    }
+
+
+
 }
 
 
