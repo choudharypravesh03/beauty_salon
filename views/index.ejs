@@ -4,21 +4,33 @@
     <% include partials/head.ejs%>
 </head>
 <body>
+    <!--when tablet-->
+    <div id="tablet" class="landscape-mode" style="height: 200em; position: fixed; top: 0;
+              width: 100vw; text-align: center; background-color: white; z-index: 9999;
+              color: black; padding-top: 50%; display: none">
+        <img src="https://cdnify.leaf.co.in/images/logo.png" alt="leaf logo"/>
+
+        <p style="width: 80vw; margin-left: 10vw; line-height: 41px;">Mobiles and Tablets will soon be
+        supported. Till then book appointment with us on Desktop Computer :)</p>
+    </div>
 
     <nav id="navigation">
        <div class="flex-space-between navigation-wrapper">
-           <div class="logo-wrapper">
-               <div class="logo">Touch & Shine</div>
-               <div class="logo-sub">Beauty Parlour and Training Center</div>
-           </div>
+           <a href="/">
+               <div class="logo-wrapper">
+                   <div class="logo">Touch & Shine</div>
+                   <div class="logo-sub">Beauty Parlour and Training Center</div>
+               </div>
+           </a>
            <div class="nav-wrapper">
                <ul>
-                   <li>Home</li>
-                   <li>Services</li>
-                   <li>Bridal</li>
-                   <li>Courses</li>
-                   <li>About Us</li>
-                   <li>Contact Us</li>
+                   <li><a class="scroll-to-anchor" href="#home">Home</a></li>
+                   <li><a class="scroll-to-anchor" href="#services">Services</a></li>
+                   <li><a class="scroll-to-anchor" href="#bridal">Bridal</a></li>
+                   <li><a class="scroll-to-anchor" href="#packages">Packages</a></li>
+                   <li><a class="scroll-to-anchor" href="#training-center">Training Center</a></li>
+                   <li><a class="scroll-to-anchor" href="#view-gallery">Gallery</a></li>
+                   <li><a class="scroll-to-anchor" href="#contact">Contact Us</a></li>
                </ul>
            </div>
        </div>
@@ -26,12 +38,17 @@
 
 
     <!-- HTML -->
-    <section id="slide-1" class="homeSlide">
-            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+    <section id="home" class="homeSlide">
+            <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#home">
                 <div class="hsContainer transparent">
-                    <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 > div">
+                    <div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#home > div">
                         <div class="heading">TOUCH & SHINE</div>
                         <div class="subheading">Beauty Parlour and Training Center</div>
+                        <a class="scroll-to-anchor" href="#features">
+                            <div class="chevron-pull-down text-center animated bounce">
+                                <i class="fa fa-chevron-down move-down" aria-hidden="true"></i>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -69,18 +86,18 @@
     </section>
 
 
-   <section id="slide-2">
+   <section id="services">
        <div class="bcg">
            <!--data-0="background-color:rgb(255, 255, 255);"
             data-top="background-color:rgb(255, 255, 255);"
-            data-anchor-target="#slide-2"-->
+            data-anchor-target="#services"-->
            <div class="hsContainer">
                <div class="hsContent slide2-pad">
                    <!--data&#45;&#45;200-bottom="opacity: 0"
                    data-center="opacity: 1"
                    data-206-top="opacity: 1"
                    data-106-top="opacity: 0"
-                   data-anchor-target="#slide-2 .title"-->
+                   data-anchor-target="#services .title"-->
                    <div>
                        <div class="heading">OUR SERVICES</div>
                        <div class="separator-line-thick"></div>
@@ -730,7 +747,7 @@
                              people :D
                             <br>
                             <br>
-                            <b>- NUPUR GADKARI PRADHAN</b>
+                            <b>- NUPUR GADKARI</b>
                         </div>
                         <br>
                         <div class="quote-icon">
@@ -760,11 +777,11 @@
     </section>
 
    <!-- HTML -->
-   <section id="slide-3" class="homeSlide">
+   <section id="bridal" class="homeSlide">
        <div class="bcg"
             data-center="background-position: 50% 0px;"
             data-top-bottom="background-position: 50% -100px;"
-            data-anchor-target="#slide-3"
+            data-anchor-target="#bridal"
        >
            <div class="hsContainer transparent">
                <div class="hsContent">
@@ -774,18 +791,25 @@
                        data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"
                        data&#45;&#45;30p-top="opacity: 1;"
                        data&#45;&#45;60p-top="opacity: 0;"
-                       data-anchor-target="#slide-3"-->
+                       data-anchor-target="#bridal"-->
 
                        <div>
                            <div class="flex-container">
                                <div class="bridal-text text-left">
-                                   <div class="title">BRIDAL MAKEUP</div>
-                                   <div class="subheading">Look like a princess on your special day</div>
+                                   <div class="title-wrapper">
+                                       <div class="heading-left">BRIDAL MAKEUP</div>
+                                       <div class="separator-line-thick-left"></div>
+                                   </div>
+                                   <br>
                                    <div class="">
-                                       <p class="text">Look Classy & Fabulous on your special day with
-                                           Makeup by Tanuja Choudhary</p>
-                                       <a class="link-button-dark" href="#">Click to know more
-                                           <i class="arrow-icons fa fa-chevron-right" aria-hidden="true"></i>
+                                       <div class="subheading">You get married once in a lifetime, We prepare
+                                           you to be at your best for that special day.</div>
+                                       <br>
+                                       <br>
+                                       <a href="/bridal">
+                                           <div class="link-button-dark">
+                                               <span>Click to know more</span>
+                                           </div>
                                        </a>
                                    </div>
                                </div>
@@ -801,11 +825,11 @@
    </section>
 
 
-    <section id="packages" class="slide-120">
+    <section id="packages" class="home140">
         <div class="packages-wrapper">
             <div class="center-wrapper">
                 <div class="center-child text-center">
-                    <div class="title-wrapper">
+                    <div class="title-wrapper"><br><br>
                         <div class="heading">OUR PACKAGES</div>
                         <div class="separator-line-thick"></div>
                     </div>
@@ -902,14 +926,26 @@
                     data--100-bottom="opacity: 1;"
                     data-anchor-target="#slide-4 .copy">
 
+                   <div id="just-for-anchor"><div id="training-center">*************</div></div>
+
                    <div class="courses-wrapper text-left">
-                       <div class="title">BEAUTICIAN TRAINING ACADEMY</div>
-                       <div class="heading">The premiere choice for beautician courses in Bhopal</div>
+                       <div class="title-wrapper">
+                           <div class="heading">BEAUTICIAN TRAINING ACADEMY</div>
+                           <div class="separator-line-thick"></div>
+                       </div>
+                       <div class="subheading">The premiere choice for beautician courses in Bhopal</div>
                        <br>
-                       <div class="subheading">Become a Pro Makeup Artist. Join and receive your certificate.
+                       <div class="subsubheading">Become a Pro Makeup Artist. Join and receive your certificate.
                            Looking for a professional make up course? A woman who cuts her hair is about
                            to change her life
                        </div>
+                       <br>
+                       <br>
+                       <a href="/training">
+                           <div class="link-button-dark">
+                               <span>Click to know more</span>
+                           </div>
+                       </a>
                    </div>
 
                </div>
@@ -919,7 +955,7 @@
    </section>
 
 
-    <section id="gallery-wrapper" class="slide text-center">
+    <section id="view-gallery" class="slide text-center">
         <div class="center-wrapper">
             <div class="center-child body-wrapper">
                 <div class="title-wrapper">
@@ -995,91 +1031,50 @@
         </div>
     </section>
 
-    <section>
-        <div class="slide" id="location-map">
+    <section id="contact">
+        <div class="" id="location-map">
             <div class="title-wrapper">
-                <div class="heading">OUR LOCATION</div>
+                <div class="heading">REACH OUT TO US</div>
                 <div class="separator-line-thick"></div>
             </div>
             <br><br>
-            <div id="map">
-
+            <div class="map-back">
+                <div class="width-50">
+                    <div class="contact-wrapper">
+                        <div class="contact-heading">Contact Us</div>
+                        <br>
+                        <div class="contact">
+                            <div class="margin-right"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <div>E-12, Phase-2,<br> Sant Asaram Nagar, <br>Near Kadambini Colony,<br>
+                                Bag Mugaliya, <br>Bhopal-462043</div>
+                        </div>
+                        <div class="contact">
+                            <div class="margin-right"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <div>(+91) 8989803040</div>
+                        </div>
+                        <div class="text-center large-margin-top">
+                            <div class="medium-text">See our work and share with us</div>
+                            <br>
+                            <div>
+                                <a class="inherit-color" href="#facebook">
+                                    <i class="fa fa-facebook icons" aria-hidden="true"></i>
+                                </a>
+                                <a class="inherit-color" href="#instagram">
+                                    <i class="fa fa-instagram icons" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="width-50" id="map"></div>
+            </div>
+            <div class="text-center" id="footer">
+                <div>Touch & Shine Beauty Parlour | All rights reserved</div>
+                <div><a class="my-email" href="mailto:pravesh03choudhary@gmail.com">Made with love by Pravesh | Click to give me a shout</a></div>
             </div>
         </div>
     </section>
 
-
-
-   <!-- HTML -->
-   <!--<section id="slide-5" class="homeSlide homeSlideTall2">
-       <div class="bcg bcg3"
-            data-300-bottom="opacity: 0;"
-            data-100-bottom="opacity: 1;"
-            data-anchor-target="#slide-5"
-       >
-           <div class="hsContainer">
-               <div class="hsContent"
-                    data-100-bottom="opacity: 0;"
-                    data-bottom="opacity: 1;"
-                    data-anchor-target="#slide-5"
-               >
-                   <h2>The End</h2>
-               </div>
-           </div>
-       </div>
-   </section>-->
-
-
-   <!-- <section id="intro">
-        <div class="heading-wrapper transparent">
-            <div id="slide0" class="slide header">
-                &lt;!&ndash;   <div class="heading">
-                       <span>Touch</span>
-                       <span>& Shine</span>
-                   </div>
-                   <div class="subheading">Beauty Salon & Training Center</div>&ndash;&gt;
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div id="slide1" class="slide">
-            &lt;!&ndash;<div class="title">
-                <h1>Slide 1</h1>
-                <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-            </div>&ndash;&gt;
-            <div id="products-wrapper" class="body-wrapper text-center">
-                <div class="heading">Our Products</div>
-                <div class="products"></div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div id="slide2" class="slide">
-            <div class="title">
-                <h1>Slide 2</h1>
-                <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-            </div>
-            <img src="http://lorempixel.com/640/480/abstract/6/">
-            <img src="http://lorempixel.com/640/480/abstract/4/">
-        </div>
-    </section>
-
-    <section>
-        <div id="slide3" class="slide">
-            <div class="title">
-                <h1>Slide 3</h1>
-                <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div id="slide4" class="slide header">
-            <h1>The End</h1>
-        </div>
-    </section>-->
 
     <script src="/vendors/js/jquery.js"></script>
     <script src="/vendors/js/imagesloaded.js"></script>

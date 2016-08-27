@@ -100,7 +100,7 @@
             loop: true,
             margin: 30,
             autoplay: true,
-            autoplayTimeout:2000,
+            autoplayTimeout:7000,
             mouseDrag: true,
             touchDrag: true,
             slideBy: 1,
@@ -146,6 +146,24 @@
                 title: 'Touch & Shine Beauty Parlour'
             });
         }
+
+
+        //Detect scroll position
+        $(window).scroll(function(){
+            var y = $(window).scrollTop();
+            if(y == 0) {
+                $("#navigation").css({"background-color":"transparent", "color":"#ffffff", "box-shadow":"none"});
+            } else if(y > 200) {
+                $("#navigation").css({"background-color":"#ffffff", "color":"#333333", "box-shadow": "1px 1px 1px 1px rgba(0,0,0,0.12)"});
+            }
+        });
+
+        $('.scroll-to-anchor').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $(this).attr('href') ).offset().top
+            }, 500);
+            return false;
+        });
 
     }
 

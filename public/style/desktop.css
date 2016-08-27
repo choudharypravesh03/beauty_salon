@@ -1,8 +1,5 @@
 /* ----------- Non-Retina Screens ----------- */
-@media screen
-and (min-device-width: 1200px)
-and (max-device-width: 1600px)
-and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 600px) {
 
     /* PARALLAX CSS ================================= */
     .hsContainer {
@@ -24,6 +21,16 @@ and (-webkit-min-device-pixel-ratio: 1) {
         text-align: center
     }
 
+    .hsContent2 {
+        max-width: 450px;
+        margin: -150px auto 0 auto;
+        display: table-cell;
+        vertical-align: bottom;
+        color: #666666;
+        padding: 0 8%;
+        text-align: center
+    }
+
     .bcg {
         background-position: center center;
         background-repeat: no-repeat;
@@ -34,12 +41,12 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     /* Slide 1 */
-    #slide-1 .bcg {
+    #home .bcg {
         background-image: url('../images/salon.jpg')
     }
 
     /* CSS - Slide 2 */
-    #slide-2 .bcg {
+    #services .bcg {
         background-image: url('../images/services/back-image-1.png');
         height: 120vh;
         /* background-color: #ddd;*/
@@ -52,7 +59,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     /* CSS - Slide 3 */
-    #slide-3 .bcg {
+    #bridal .bcg {
         background-image: url('../images/bridal/bridal-image.jpg')
     }
 
@@ -117,25 +124,86 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .heading-wrapper {
     }
 
-    #slide-1 .heading {
+    #home .heading {
         font-family: HelveticaBold;
         font-size: 110px;
         color: #ffffff;
     }
 
-    #slide-1 .subheading {
+    #home .subheading {
         font-family: HelveticaThin;
         font-size: 40px;
         color: #ffffff;
+    }
+
+    #home .move-down {
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    #home .chevron-pull-down {
+        position: absolute;
+        top: 85%;
+        left: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .animated {
+        -webkit-animation-name: bounceIn;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: 5;
+        -webkit-animation-timing-function: ease-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-name: bounceIn;
+        animation-duration: 4s;
+        animation-iteration-count: 5;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
+    /*
+ * Animation for webkit
+*/
+    @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+        40% {-webkit-transform: translateY(-30px);}
+        60% {-webkit-transform: translateY(-15px);}
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-30px);}
+        60% {transform: translateY(-15px);}
+    }
+    /*
+     * Adding the animation to our element
+    */
+    .bounce {
+        -webkit-animation-name: bounce;
+        animation-name: bounce;
     }
 
     /* NAVIGATION WRAPPER */
     #navigation {
         position: fixed;
         width: 100%;
-        color: #ffffff;
         padding: 10px;
-        z-index: 1;
+        z-index: 10;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        color: #ffffff;
+    }
+
+    #navigation-white {
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+        background-color: #ffffff;
+        z-index: 10;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        color: #333333;
+        box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.12);
     }
 
     .flex-space-between {
@@ -219,7 +287,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding: 0px 30px;
     }
 
-    #slide-2 .item {
+    #services .item {
         width: 90vw;
         height: 80vh;
         display: flex;
@@ -231,40 +299,40 @@ and (-webkit-min-device-pixel-ratio: 1) {
         /* background-color: #666666; */
     }
 
-    #slide-2 .item:hover {
+    #services .item:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
-    #slide-2 .block-heading {
+    #services .block-heading {
         font-family: HelveticaMedium;
         font-size: 20px;
     }
 
-    #slide-2 .vertical-line {
+    #services .vertical-line {
         height: 40vh;
         width: 2px;
         background-color: #ffffff;
     }
 
-    #slide-2 .content-table {
+    #services .content-table {
         padding: 20px;
     }
 
-    #slide-2 .block-text {
+    #services .block-text {
         color: #FFFFFF;
         width: 50%;
         height: 80vh;
         background-color: crimson;
     }
 
-    #slide-2 .title {
+    #services .title {
         color: #ffffff;
         font-family: HelveticaLight;
         font-size: 40px;
         margin-bottom: 3vh;
     }
 
-    #slide-2 .description {
+    #services .description {
         border: 5px solid #ffffff;
         height: 78%;
         width: 90%;
@@ -275,45 +343,45 @@ and (-webkit-min-device-pixel-ratio: 1) {
         padding-top: 10%;
     }
 
-    #slide-2 .block-desc {
+    #services .block-desc {
         margin-top: 4vh;
         text-align: center;
     }
 
-    #slide-2 .fa-circle-o {
+    #services .fa-circle-o {
         font-size: 12px;
     }
 
-    #slide-2 .text {
+    #services .text {
         font-family: HelveticaMedium;
         margin-left: 7px;
     }
 
-    #slide-2 table tr {
+    #services table tr {
         height: 40px;
     }
 
-    #slide-2 .point {
+    #services .point {
         display: flex;
     }
 
-    #slide-2 .flex-container {
+    #services .flex-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    #slide-2 .owl-stage-outer {
+    #services .owl-stage-outer {
         /*margin-left: 13px;*/
     }
 
-    #slide-2 .arrow-icons {
+    #services .arrow-icons {
         font-size: 30px;
         font-weight: inherit;
         cursor: pointer;
     }
 
-    #slide-2 .arrow-icons:hover {
+    #services .arrow-icons:hover {
         /* -ms-transform: scale(2,3); !* IE 9 *!
          -webkit-transform: scale(2,3); !* Safari *!
          transform: scale(1.1,1.1);
@@ -321,65 +389,65 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     }
 
-    #slide-2 .slide2-pad {
+    #services .slide2-pad {
         padding: 0;
     }
 
-    #slide-2 .carousel-holder {
+    #services .carousel-holder {
         width: 90vw;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
         height: 80vh;
     }
 
-    #slide-2 .block-image {
+    #services .block-image {
         width: 50%;
         height: 100vh;
         background-repeat: no-repeat !important;
         background-size: cover !important;
     }
 
-    #slide-2 .block-image-1 {
+    #services .block-image-1 {
         background: url("../images/services/hair.jpg");
     }
 
-    #slide-2 .block-image-2 {
+    #services .block-image-2 {
         background: url("../images/services/haircolor.jpg");
         background-position: -100px 50px;
     }
 
-    #slide-2 .block-image-3 {
+    #services .block-image-3 {
         background: url("../images/services/threading.jpg");
     }
 
-    #slide-2 .block-image-4 {
+    #services .block-image-4 {
         background: url("../images/services/facial.jpg");
     }
 
-    #slide-2 .block-image-5 {
+    #services .block-image-5 {
         background: url("../images/services/bleach.jpg");
         background-position: -152px -60px;
     }
 
-    #slide-2 .block-image-6 {
+    #services .block-image-6 {
         background: url("../images/services/treatment.jpg");
     }
 
-    #slide-2 .block-image-7 {
+    #services .block-image-7 {
         background: url("../images/services/waxing.jpg");
     }
 
-    #slide-2 .bring-center {
+    #services .bring-center {
         width: 80%;
         margin: 0 auto;
     }
 
-    #slide-2 .points-table {
+    #services .points-table {
         border-collapse: collapse;
         margin-left: 5vw;
         width: 90%;
     }
 
-    #slide-2 .arrow {
+    #services .arrow {
         background: #ffffff;
         padding: 10px;
         width: 40px;
@@ -393,18 +461,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
-    #slide-2 .arrow:hover {
+    #services .arrow:hover {
         -ms-transform: scale(2, 3); /*!* IE 9 *!*/
         -webkit-transform: scale(2, 3); /*!* Safari *!*/
         transform: scale(1.2, 1.2);
         transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     }
 
-    #slide-2 .left-arrow {
+    #services .left-arrow {
         left: 30px;
     }
 
-    #slide-2 .right-arrow {
+    #services .right-arrow {
         right: 30px;
     }
 
@@ -457,32 +525,31 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     /*BRIDAL*/
-    #slide-3 .title {
+    #bridal .title {
         color: #ffffff;
     }
 
-    #slide-3 .flex-container {
+    #bridal .flex-container {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    #slide-3 .text {
-        font-family: HelveticaLight;
+    #bridal .subheading {
+        font-family: HelveticaThin;
+        font-size: 35px;
         color: #ffffff !important;
-        text-align: justify;
-        font-size: 17px;
     }
 
-    #slide-3 .bridal-text, #slide-3 .bridal-image {
+    #bridal .bridal-text, #bridal .bridal-image {
         width: 50%;
     }
 
-    #slide-3 .bridal-text {
+    #bridal .bridal-text {
         padding-right: 3em;
     }
 
-    #slide-3 .image-bride {
+    #bridal .image-bride {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 
@@ -500,12 +567,23 @@ and (-webkit-min-device-pixel-ratio: 1) {
     }
 
     #slide-4 .heading {
-        font-family: HelveticaThin;
-        font-size: 56px;
         color: #ffffff;
+        text-align: left;
+    }
+
+    #slide-4 .separator-line-thick {
+        margin: 10px 0px;
     }
 
     #slide-4 .subheading {
+        font-family: HelveticaThin;
+        color: #ffffff !important;
+        text-align: left;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    #slide-4 .subsubheading {
         font-family: HelveticaLight;
         color: #ffffff !important;
         text-align: left;
@@ -519,41 +597,41 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
     /*GALLERY*/
 
-    #gallery-wrapper {
+    #view-gallery {
         margin-top: 10vh;
         height: 220vh;
     }
 
-    #gallery-wrapper .heading {
+    #view-gallery .heading {
         color: #333;
     }
 
-    #gallery-wrapper .grid {
+    #view-gallery .grid {
         background: #FFFFFF;
         width: 70vw;
         margin: 0 auto;
     }
 
     /* clear fix */
-    #gallery-wrapper .grid:after {
+    #view-gallery .grid:after {
         content: '';
         display: block;
         clear: both;
     }
 
     /* ---- .grid-item ---- */
-    #gallery-wrapper .grid-sizer,
-    #gallery-wrapper .grid-item {
+    #view-gallery .grid-sizer,
+    #view-gallery .grid-item {
         width: 30%;
     }
 
-    #gallery-wrapper .grid-item {
+    #view-gallery .grid-item {
         float: left;
         margin-bottom: 10px;
         overflow: hidden;
     }
 
-    #gallery-wrapper .grid-item img {
+    #view-gallery .grid-item img {
         display: block;
         width: 100%;
         -webkit-transition: all 0.5s linear;
@@ -562,7 +640,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
         transform: scale3d(1, 1, 1);
     }
 
-    #gallery-wrapper .grid-item img:hover {
+    #view-gallery .grid-item img:hover {
         -webkit-transform: scale3d(1.2, 1.2, 1);
         transform: scale3d(1.2, 1.2, 1);
     }
@@ -570,9 +648,58 @@ and (-webkit-min-device-pixel-ratio: 1) {
     /*LOCATION ON MAP*/
 
     #map {
-        width: 100%;
-        height: 400px;
+        width: 60vw;
+        max-width: 60vw;
+        height: 70vh;
+        overflow: hidden !important;
     }
+
+    #location-map .map-back {
+        display: flex;
+        background-image: url('../images/services/back-image-1.png');
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+    }
+
+    #location-map .contact-heading {
+        font-size: 30px;
+        font-family: HelveticaMedium;
+        margin-bottom: 15px;
+    }
+
+    #location-map .contact {
+        text-align: left;
+        font-family: HelveticaLight;
+        line-height: 25px;
+        margin-bottom: 15px;
+        display: flex;
+    }
+
+    #location-map .contact-wrapper {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    #location-map .margin-right {
+        margin-right: 15px;
+    }
+
+    #location-map .inherit-color {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    #location-map .icons {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+
+    #location-map .medium-text {
+        font-family: HelveticaLight;
+    }
+
+
 
 
     /*PACKAGES*/
@@ -655,6 +782,101 @@ and (-webkit-min-device-pixel-ratio: 1) {
         background: #30dbb5;
     }
 
+    #footer {
+        background-color: #333333;
+        color: #ffffff;
+        font-family: HelveticaLight;
+        padding:20px;
+        line-height: 25px;
+    }
+
+    .my-email {
+        font-size: 12px;
+        color: #869791 !important;
+    }
+
+    #just-for-anchor {
+        position: relative;
+    }
+
+    #just-for-anchor div {
+        position: absolute;
+        color: white;
+        bottom: 212px;
+        left: 0;
+        right: 0;
+        visibility: hidden;
+    }
+
+
+
+    /*BRIDAL PAGE*/
+
+    #bridal-makeup .header {
+        background: url("../images/bridal/bride.jpg");
+        background-size: cover;
+        height: 60vh;
+    }
+
+    #bridal-makeup {
+        padding-top: 6%;
+    }
+
+    #bridal-makeup .header .cover-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #bridal-makeup .bridal-header-heading {
+        color: #ffffff;
+        font-family: HelveticaBold;
+        font-size: 50px;
+    }
+
+    #bridal-makeup .bridal-header-subheading {
+        color: #ffffff;
+        font-family: HelveticaLight;
+        font-size: 25px;
+    }
+
+    #bridal-makeup .header .padding-left {
+        padding-left: 12vw;
+    }
+
+    #bridal-description .heading {
+        color: #333333;
+        font-family: HelveticaMedium;
+    }
+
+    #main-content .material, #training-courses  .material {
+        font-size: 18px;
+        font-family: HelveticaLight;
+    }
+
+    .align-content-padding {
+        padding-left: 14%;
+        padding-right: 14%;
+        padding-top: 4%;
+    }
+
+    #main-content .image-container {
+        width: 40vw;
+    }
+
+    #main-content .text-content {
+        width: 50vw;
+    }
+
+    #training-courses .background-blue {
+        background: #8E5DA3;
+    }
+
+    #main-content .padding-right {
+        padding-right: 10%;
+    }
 
 
 }
