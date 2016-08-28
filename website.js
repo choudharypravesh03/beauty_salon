@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/', function(req, res) {
     res.render('index', {user: "Great User", title:"homepage"})
