@@ -1,5 +1,4 @@
-( function( $ ) {
-
+$(document).ready(function() {
     // Setup variables
     $window = $(window);
     $slide = $('.homeSlide');
@@ -64,8 +63,8 @@
             slideBy: 1,
             startPosition: 1,
             dots: false,/*
-            animateIn: "fadeIn",
-            animateOut: "fadeOut",*/
+             animateIn: "fadeIn",
+             animateOut: "fadeOut",*/
             smartSpeed: 750,
             fluidSpeed: 750,
             addClassActive: true,
@@ -166,6 +165,4 @@
         });
 
     }
-
-
-} )( jQuery );
+})

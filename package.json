@@ -8,12 +8,13 @@
     "test": "test"
   },
   "dependencies": {
-    "express": "*",
-    "ejs": "*",
-    "chai": "^3.5.0",
     "bower": "*",
+    "chai": "^3.5.0",
+    "ejs": "*",
+    "express": "*",
     "grunt": "~0.4.1",
-    "grunt-exec": "~0.4.2"
+    "grunt-exec": "~0.4.2",
+    "morgan": "^1.7.0"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
